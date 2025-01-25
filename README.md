@@ -38,3 +38,4 @@ php artisan db:seed
 - phpMyAdmin  
 [http://localhost:8080/](http://localhost:8080/)# kojima_second_project
 # second_project_kojima
+# second_project
