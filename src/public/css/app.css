@@ -1,0 +1,76 @@
+/* ヘッダー全体 */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vw;
+}
+
+/* 検索フォーム */
+.search_form {
+    width: 400px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* 各種リンク配置 */
+.header-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    list-style-type: none;
+}
+
+/* リンクデザイン */
+.mypage-btn,
+.header-login-btn {
+    color: white;
+    text-decoration: none;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+.sell-btn {
+    background-color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 3px 10px;
+    color: black;
+    margin-left: 8px;
+}
+
+/* PC (1400px〜1540px) */
+@media (min-width: 1400px) and (max-width: 1540px) {}
+
+/* タブレット (768px〜850px) */
+@media (min-width: 768px) and (max-width: 850px) {
+    header {
+        height: 6vw;
+    }
+
+    .header-logo {
+        width: 250px;
+        height: auto;
+    }
+
+    .search_form {
+        width: 260px;
+        padding: 12px;
+    }
+
+    .header-link {
+        width: 250px;
+        font-size: 13px;
+    }
+
+    .logout-btn {
+        font-size: 13px;
+    }
+}

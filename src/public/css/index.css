@@ -1,0 +1,86 @@
+/* タブを表示しているとき */
+.tab a.active {
+    color: #FF5555;
+    font-weight: bold;
+}
+
+/* 表示していないとき */
+.tab a {
+    color: #5F5F5F;
+}
+
+.tab {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+hr {
+    height: 2px;
+    background-color: #5F5F5F;
+}
+
+.recommended-inner,
+.likes-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 30px;
+}
+
+.product-image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+}
+
+.product-name {
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.empty-message {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sold_out {
+    color: #FF5555;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* PCスタイル (1400-1540px) */
+@media (min-width: 1400px) and (max-width: 1540px) {}
+
+/* タブレットスタイル (768-850px) */
+@media (min-width: 768px) and (max-width: 850px) {
+    .tab {
+        width: 25%;
+    }
+
+    .product-image {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,170 @@
+/* 全体 */
+.exhibition-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #5F5F5F;
+    margin-bottom: -10px;
+}
+
+h3 {
+    margin-bottom: -3px;
+    margin-top: 30px;
+}
+
+hr {
+    height: 2px;
+    background-color: #5F5F5F;
+}
+
+/* 商品画像 */
+.image-group {
+    border: dashed 2px #5F5F5F;
+    border-radius: 4px;
+    padding: 30px 80px;
+    margin-bottom: 50px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* 画像を選択する */
+.custom-file-label {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #FF5555;
+    border-radius: 8px;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: #FF5555;
+}
+
+
+.form-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* チェックボックスを非表示 */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* カテゴリー各種 */
+.checkbox-item {
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #FF5555;
+    border-radius: 20px;
+    padding: 2px 18px;
+    font-weight: bold;
+    color: #FF5555;
+    margin: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+    user-select: none;
+}
+
+/* カテゴリー選択時の背景色変更 */
+input[type="checkbox"]:checked+.checkbox-item {
+    background-color: #FF5555;
+    color: white;
+    border: 2px solid #FF5555;
+}
+
+.checkbox-item:hover {
+    background-color: #FF5555;
+    color: white;
+    border-color: #FF5555;
+}
+
+/* 商品状態選択フォーム */
+.form-item-condition {
+    position: relative;
+}
+
+/* 商品状態 */
+.condition {
+    border: 1px solid #5F5F5F;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: #5F5F5F;
+    font-weight: bold;
+    appearance: none;
+}
+
+option {
+    background-color: #636769;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-item-condition::after {
+    position: absolute;
+    margin-top: 12px;
+    right: 2%;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-top: 8px solid #5f5f5f;
+    content: "";
+}
+
+.product_name,
+.price {
+    width: 100%;
+    padding: 6px 0;
+}
+
+.description {
+    height: 10vw;
+    width: 100%;
+}
+
+/* 出品するボタン */
+.exhibition-form-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF5555;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+/* バリデーションメッセージ */
+.error-message {
+    color: #FF5555;
+    font-size: 16px;
+}
+
+/* PCスタイル (1400-1540px) */
+@media (min-width: 1400px) and (max-width: 1540px) {}
+
+/* タブレットスタイル (768-850px) */
+@media (min-width: 768px) and (max-width: 850px) {
+    .exhibition-form {
+        width: 60%;
+    }
+}

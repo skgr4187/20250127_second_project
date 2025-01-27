@@ -1,0 +1,59 @@
+h1 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.register-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.register-form-group {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-message {
+    color: #FF5555;
+    font-size: 16px;
+}
+
+.form-item {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: #2085D3;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.register-btn {
+    width: 500px;
+    padding: 10px;
+    background-color: #FF5555;
+    color: #fff;
+    border: none;
+    margin: 20px 40px 30px 40px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* PCスタイル (1400-1540px) */
+@media (min-width: 1400px) and (max-width: 1540px) {}
+
+/* タブレットスタイル (768-850px) */
+@media (min-width: 768px) and (max-width: 850px) {}

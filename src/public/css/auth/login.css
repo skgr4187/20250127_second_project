@@ -1,0 +1,66 @@
+h1 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-form-group {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-message {
+    color: #FF5555;
+    font-size: 16px;
+}
+
+.form-item {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.register-link {
+    text-decoration: none;
+    color: #2085D3;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.login-btn {
+    align-items: center;
+    width: 500px;
+    padding: 10px;
+    background-color: #FF5555;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    margin: 30px 50px 30px 50px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+/* PCスタイル (1400-1540px) */
+@media (min-width: 1400px) and (max-width: 1540px) {
+
+}
+
+/* タブレットスタイル (768-850px) */
+@media (min-width: 768px) and (max-width: 850px) {
+
+}

@@ -1,0 +1,168 @@
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 30px;
+}
+
+.user_name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-none {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+    background-color: grey;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* アップロードされた画像のスタイル */
+.user-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+}
+
+/* プロフィール編集ボタン */
+.profile-edit-btn {
+    background-color: white;
+    border: 2px solid #FF5555;
+    border-radius: 8px;
+    padding: 5px 20px;
+    font-weight: bold;
+    color: #FF5555;
+    margin-left: 150px;
+    font-size: 15px;
+}
+
+/* タブを表示していないとき */
+.tab a {
+    color: #5F5F5F;
+    font-weight: bold;
+}
+
+/* 表示しているとき */
+.tab a.active {
+    color: #FF5555;
+    font-weight: bold;
+}
+
+.tab {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+hr {
+    height: 2px;
+    background-color: #5F5F5F;
+}
+
+.sell-inner,
+.buy-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-name {
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.product {
+    margin: 30px;
+}
+
+.product-image {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+}
+
+.empty-message {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sold_out {
+    color: #FF5555;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* PCスタイル (1400-1540px) */
+@media (min-width: 1400px) and (max-width: 1540px) {}
+
+/* タブレットスタイル (768-850px) */
+@media (min-width: 768px) and (max-width: 850px) {
+    .tab {
+        width: 28%;
+        font-size: 15px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .profile-edit-btn {
+        font-size: 14px;
+    }
+
+    .product-image {
+        width: 200px;
+        height: auto;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-edit-btn {
+        margin-left: 80px;
+    }
+}
