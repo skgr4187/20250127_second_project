@@ -37,3 +37,4 @@ php artisan db:seed
 [http://localhost/](http://localhost/)  
 - phpMyAdmin  
 [http://localhost:8080/](http://localhost:8080/)# 0127_second_project
+# second_project_0127
