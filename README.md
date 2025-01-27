@@ -30,13 +30,11 @@ php artisan db:seed
 - MySQL 15.1
 
 ## ER図
+![second_project_ER](https://github.com/user-attachments/assets/ff4f6f1d-55ed-4f5f-9a49-693e8e401b41)
 
 
 ## URL
 - 開発環境  
 [http://localhost/](http://localhost/)  
 - phpMyAdmin  
-[http://localhost:8080/](http://localhost:8080/)# 0127_second_project
-# second_project_0127
-# kojima_20250127_second_project
-# 20250127_second_project
+[http://localhost:8080/](http://localhost:8080/)
