@@ -16,7 +16,7 @@ Route::get('/item/{item_id}', [ItemController::class, 'show'])->name('products.s
 Route::post('/register', [UserController::class, 'store'])->name('register');
 
 // ログイン処理
-Route::post('/login', [UserController::class, 'login'])->name('login');
+Route::post('/login', [UserController::class, 'login'])->name('user.login');
 
 
 Route::middleware('auth')->group(function () {
