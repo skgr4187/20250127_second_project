@@ -90,8 +90,8 @@ class UserController extends Controller
 
         // プロフィール画像のアップロード処理
         if ($request->hasFile('user_image')) {
-            $imagePath = $request->file('user_image')->store('images', 'public');
-            $user->image = $imagePath;
+            $imagePath = $request->file('user_image')->store('public');
+            $user->image = str_replace('public/', 'storage/', $imagePath);
             }
         $user->update([
             'name' => $request->name,

@@ -14,10 +14,6 @@ Route::get('/item/{item_id}', [ItemController::class, 'show'])->name('products.s
 
 // 会員登録処理
 Route::post('/register', [UserController::class, 'store'])->name('user.register');
-s
-// ログイン処理
-Route::post('/login', [UserController::class, 'login'])->name('user.login');
-
 
 Route::middleware('auth')->group(function () {
 

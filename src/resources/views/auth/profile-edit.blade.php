@@ -13,7 +13,7 @@
         <div class="image">
             <div class="profile-image">
                 @if($user->image)
-                    <img src="{{ $user->image }}" alt="プロフィール画像" class="user-image">
+                    <img src="{{ asset( $user->image ) }}" alt="プロフィール画像" class="user-image">
                 @else
                     <div class="image-none">
                         <span>未設定</span>

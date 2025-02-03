@@ -9,7 +9,7 @@
 <div class="profile-header">
     <div class="profile-image">
         @if($user->image)
-            <img src="{{ $user->image }}" alt="プロフィール画像" class="user-image">
+            <img src="{{ asset( $user->image ) }}" alt="プロフィール画像" class="user-image">
         @else
             <div class="image-none">
                 <span>未設定</span>
@@ -44,7 +44,7 @@
                             <div class="product-card">
                                 <a href="{{ route('products.show', ['item_id' => $item->id]) }}">
                                     <div class="product-image">
-                                        <img src="{{ $item->image }}" alt="{{ $item->name }}" class="item">
+                                        <img src="{{ asset( $item->image ) }}" alt="{{ $item->name }}" class="item">
                                     </div>
                                     <p class="product-name">{{ $item->name }}</p>
                                 </a>

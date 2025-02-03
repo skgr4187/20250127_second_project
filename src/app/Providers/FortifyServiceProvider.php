@@ -17,17 +17,17 @@ class FortifyServiceProvider extends ServiceProvider
     {
         // 新規会員登録処理
         Fortify::createUsersUsing(CreateNewUser::class);
-        
+
         // /registerにアクセスしたときに表示するviewファイル
         Fortify::registerView(function () {
             return view('auth.register');
         });
-        
+
         // /loginにアクセスしたときに表示するviewファイル
         Fortify::loginView(function () {
             return view('auth.login');
         });
-        
+
     }
 }
 

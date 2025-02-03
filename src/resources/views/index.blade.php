@@ -29,7 +29,7 @@
                         <div class="product-card">
                             <a href="{{ route('products.show', ['item_id' => $item->id]) }}">
                                 <div class="product-image">
-                                    <img src="{{ $item->image }}" alt="{{ $item->name }}" class="item">
+                                    <img src="{{ asset( $item->image ) }}" alt="{{ $item->name }}" class="item">
                                 </div>
                                 <p class="product-name">{{ $item->name }}</p>
                             </a>
@@ -53,7 +53,7 @@
                             <div class="product-card">
                                 <a href="{{ route('products.show', ['item_id' => $item->id]) }}">
                                     <div class="product-image">
-                                        <img src="{{ $item->image }}" alt="{{ $item->name }}" class="product-image">
+                                        <img src="{{ asset( $item->image ) }}" alt="{{ $item->name }}" class="product-image">
                                     </div>
                                     <p class="product-name">{{ $item->name }}</p>
                                 </a>

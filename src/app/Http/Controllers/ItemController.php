@@ -94,9 +94,10 @@ class ItemController extends Controller
     {
         // バリデーション済みデータを取得
         $validated = $request->validated();
-        
+
         // 画像の保存処理
-        $imagePath = $request->file('image')->store('images','public');
+        $imagePath = $request->file('image')->store('public');
+        $imagePath = str_replace('public/', 'storage/', $imagePath);
 
         // 商品を保存
         $item = Item::create([
