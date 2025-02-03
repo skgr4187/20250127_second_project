@@ -22,7 +22,7 @@ php artisan key:generate
 6. マイグレーションの実行  
 php artisan migrate
 7. シーディングの実行  
-php artisan db:seed
+php artisan db:seed  
 ※エラー419が発生した場合はphpコンテナで以下を実行してください。  
 php artisan config:cache
 
