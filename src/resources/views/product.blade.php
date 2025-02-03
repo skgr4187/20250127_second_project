@@ -94,7 +94,7 @@
                                         <img src="{{ asset($comment->user->image) }}" alt="{{ $comment->user->name }}" class="user-image">
                                     @else
                                         <div class="image-none">
-                                            <span>{{ substr($user->name, 0, 1) }}</span>
+                                            <span >未設定</span>
                                         </div>
                                     @endif
                                 </div>
