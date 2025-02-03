@@ -13,8 +13,8 @@ Route::get('/', [ItemController::class, 'index'])->name('products.index');
 Route::get('/item/{item_id}', [ItemController::class, 'show'])->name('products.show');
 
 // 会員登録処理
-Route::post('/register', [UserController::class, 'store'])->name('register');
-
+Route::post('/register', [UserController::class, 'store'])->name('user.register');
+s
 // ログイン処理
 Route::post('/login', [UserController::class, 'login'])->name('user.login');
 

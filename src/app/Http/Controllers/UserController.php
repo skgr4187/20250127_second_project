@@ -58,19 +58,19 @@ class UserController extends Controller
     // プロフィールページを表示
     public function showMypage(Request $request)
     {
-        $tab = $request->query('tab', 'sell'); 
+        $tab = $request->query('tab', 'sell');
         $user = Auth::user();
-        
-        $items = collect(); 
-        $orders = collect(); 
-        if ($tab === 'sell') { 
-            // 出品した商品を表示する 
-            $items = Item::where('user_id', $user->id)->get(); 
-        } elseif ($tab === 'buy') { 
-            // 購入した商品を表示する 
-            if ($user) { 
-                $orders = Order::where('user_id', $user->id)->with('item')->get(); 
-            } 
+
+        $items = collect();
+        $orders = collect();
+        if ($tab === 'sell') {
+            // 出品した商品を表示する
+            $items = Item::where('user_id', $user->id)->get();
+        } elseif ($tab === 'buy') {
+            // 購入した商品を表示する
+            if ($user) {
+                $orders = Order::where('user_id', $user->id)->with('item')->get();
+            }
         }
         return view('auth.profile', compact('items', 'tab', 'user','orders'));
     }
@@ -87,7 +87,7 @@ class UserController extends Controller
     {
         $user = Auth::user();
         $validated = $request->validated();
-        
+
         // プロフィール画像のアップロード処理
         if ($request->hasFile('user_image')) {
             $imagePath = $request->file('user_image')->store('images', 'public');
@@ -99,8 +99,6 @@ class UserController extends Controller
             'address' => $request->address,
             'building' => $request->building,
         ]);
-
-        $user->save();
 
         return redirect()->route('products.index',compact('user'));
     }

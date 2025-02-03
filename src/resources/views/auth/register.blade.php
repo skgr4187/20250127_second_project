@@ -8,7 +8,7 @@
 @section('content')
 <div class="register-form">
     <h1>会員登録</h1>
-    <form class="register-form-inner" action=/register method="POST">
+    <form class="register-form-inner" action="{{ route('user.register') }}" method="post">
         @csrf
         <div class="register-form-group">
             <label for="name">ユーザー名</label>
