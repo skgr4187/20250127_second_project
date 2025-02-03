@@ -23,6 +23,8 @@ php artisan key:generate
 php artisan migrate
 7. シーディングの実行  
 php artisan db:seed
+※エラー419が発生した場合はphpコンテナで以下を実行してください。  
+php artisan config:cache
 
 ## 使用技術
 - Laravel 8.83.29
